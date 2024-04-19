@@ -1,5 +1,7 @@
 import subprocess
 
+from python_project import __main__
+
 
 def test_main_process():
     completed_process = subprocess.run(["python", "-m", "python_project"], capture_output=True, text=True)
@@ -7,4 +9,4 @@ def test_main_process():
 
 
 def test_main_function():
-    assert 0 == 0
+    assert __main__.main() == 0
