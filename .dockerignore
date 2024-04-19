@@ -1,0 +1,14 @@
+.devcontainer/
+.github/
+.venv/
+.vscode/
+.python-version
+*.md
+!README.md
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv
+
