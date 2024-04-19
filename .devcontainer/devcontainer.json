@@ -6,9 +6,6 @@
     "PYTHONASYNCIODEBUG": "1",
     "POETRY_VIRTUALENVS_CREATE": "false"
   },
-  // "mounts": [
-  //   "source=${localEnv:HOME}/.gnupg,target=/root/.gnupg/,type=bind,consistency=cached"
-  // ],
   "remoteUser": "root",
   "postCreateCommand": ".devcontainer/postCreateCommand.sh",
   "customizations": {
