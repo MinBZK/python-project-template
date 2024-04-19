@@ -24,8 +24,8 @@ After the repository is create make sure to change the following: (we may need t
 
 * change the owners in the the .github/CODEOWNERS
 * run a global rename command where you rename new_name to your project name
-  * run: `find . -type f -exec sed -i s|python_project|new_name|g {} \;`
+  * macos: `find . -type f -not -path "./.git/*" -exec  sed -i '' "s/python_project/new_name/g" {} \;`
+  * linux: `find . -type f -not -path "./.git/*" -exec  sed -i "s/python_project/new_name/g" {} \;`
 * rename the python_project/ folder to your project name
-
 * change author and name in pyproject.toml
-* change maintainer label and workfolder in Dockerfile
+* change labels in Dockerfile to appropriate values
