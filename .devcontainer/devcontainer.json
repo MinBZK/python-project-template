@@ -3,15 +3,14 @@
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
   "containerEnv": {
     "DEVCONTAINER": "1",
-    "PYTHONASYNCIODEBUG": "1"
+    "PYTHONASYNCIODEBUG": "1",
+    "POETRY_VIRTUALENVS_CREATE": "false"
   },
-
-  "features": {
-    "ghcr.io/devcontainers/features/python:1": {
-      "version": "3.11",
-      "toolsToInstall": "poetry,mypy,pytest"
-    }
-  },
+  // "mounts": [
+  //   "source=${localEnv:HOME}/.gnupg,target=/root/.gnupg/,type=bind,consistency=cached"
+  // ],
+  "remoteUser": "root",
+  "postCreateCommand": ".devcontainer/postCreateCommand.sh",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -19,13 +18,15 @@
         "editorconfig.editorconfig",
         "streetsidesoftware.code-spell-checker",
         "redhat.vscode-yaml",
-        "charliermarsh.ruff"
+        "charliermarsh.ruff",
+        "github.vscode-github-actions"
       ],
       "settings": {
         "editor.formatOnPaste": false,
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
         "files.trimTrailingWhitespace": true,
+        "terminal.integrated.inheritEnv": true,
         "terminal.integrated.profiles.linux": {
           "zsh": {
             "path": "/usr/bin/zsh"
