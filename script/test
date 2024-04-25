@@ -7,3 +7,9 @@ if [ $? -ne 0 ]; then
 fi
 
 coverage report
+
+pyright $@
+if [ $? -ne 0 ]; then
+    echo "Typecheck failed"
+    exit 1
+fi
