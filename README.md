@@ -12,15 +12,15 @@ This is a template repository that can be used for Python 3.11 projects and uses
 * A editorconfig file so editors enforce formatting
 * A default .gitgignore
 * A default pre-commit-config
-* A .python-version file for users that use pyenv
 * A EUPL v1.2 Licence
 * A basic Docker setup
+* publiccode.yml
 
 ## How to use this template repository
 
 When creating a new Repository select this template repository as the base.
 
-After the repository is create make sure to change the following: (we may need to consider copier to automate this)
+After the repository is created make sure to change the following (we may need to consider copier to automate this):
 
 * change the owners in the the .github/CODEOWNERS
 * run a global rename command where you rename new_name to your project name
@@ -29,3 +29,5 @@ After the repository is create make sure to change the following: (we may need t
 * rename the python_project/ folder to your project name
 * change author and name in pyproject.toml
 * change labels in Dockerfile to appropriate values
+* Verify the License used
+* Change publiccode.yml to your needs
