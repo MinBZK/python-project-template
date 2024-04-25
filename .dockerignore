@@ -2,6 +2,7 @@
 .github/
 .venv/
 .vscode/
+.idea/
 .python-version
 *.md
 !README.md
