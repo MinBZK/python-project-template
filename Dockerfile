@@ -1,6 +1,6 @@
 ARG PYTHON_VERSION=3.11.7-slim
 
-FROM python:${PYTHON_VERSION} as project-base
+FROM  --platform=$BUILDPLATFORM python:${PYTHON_VERSION} as project-base
 
 LABEL maintainer=ai-validatie@minbzk.nl \
       organization=MinBZK \
