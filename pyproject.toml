@@ -9,7 +9,7 @@ readme = "README.md"
 python = "^3.11"
 
 [tool.poetry.group.test.dependencies]
-pytest = "^8.2.0"
+pytest = "^8.2.1"
 coverage = "^7.5.1"
 
 [tool.poetry.group.dev.dependencies]
