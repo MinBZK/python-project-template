@@ -1,0 +1,40 @@
+name: Validate and lint code
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches:
+      - 'main'
+
+env:
+  POETRY_CACHE_DIR: ~/.cache/pypoetry
+  PYTHON_VERSION: "3.11"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install poetry
+        run: pipx install poetry
+
+      - name: Set up Python ${{ env.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: "poetry"
+
+      - name: Install poetry dependencies
+        run: poetry install
+
+      - name: Run ruff check
+        run: poetry run ruff check --output-format=github
+
+      - name: Run ruff format
+        run: poetry run ruff format --check
+
+      - name: Run pyright
+        run: poetry run pyright
