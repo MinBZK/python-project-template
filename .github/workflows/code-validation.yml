@@ -1,4 +1,4 @@
-name: continuous-integration
+name: Validate and lint code
 
 on:
   push:
@@ -27,16 +27,13 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: "poetry"
 
-      - name: Install dependencies
+      - name: Install poetry dependencies
         run: poetry install
 
-      - name: Install dependencies
-        run: poetry build
-
-      - name: run ruff
+      - name: Run ruff check
         run: poetry run ruff check --output-format=github
 
-      - name: Run format
+      - name: Run ruff format
         run: poetry run ruff format --check
 
       - name: Run pyright
