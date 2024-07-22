@@ -9,13 +9,13 @@ readme = "README.md"
 python = "^3.11"
 
 [tool.poetry.group.test.dependencies]
-pytest = "^8.2.2"
+pytest = "^8.3.1"
 coverage = "^7.6.0"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.5.2"
+ruff = "^0.5.4"
 pre-commit = "^3.7.1"
-pyright = "^1.1.371"
+pyright = "^1.1.372"
 
 [build-system]
 requires = ["poetry-core"]
