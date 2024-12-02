@@ -9,11 +9,11 @@ readme = "README.md"
 python = "^3.11"
 
 [tool.poetry.group.test.dependencies]
-pytest = "^8.3.3"
+pytest = "^8.3.4"
 coverage = "^7.6.8"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.8.0"
+ruff = "^0.8.1"
 pre-commit = "^4.0.1"
 pyright = "^1.1.389"
 
