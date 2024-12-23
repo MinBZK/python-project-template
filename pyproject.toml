@@ -13,9 +13,9 @@ pytest = "^8.3.4"
 coverage = "^7.6.9"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.8.3"
+ruff = "^0.8.4"
 pre-commit = "^4.0.1"
-pyright = "^1.1.390"
+pyright = "^1.1.391"
 
 [build-system]
 requires = ["poetry-core"]
