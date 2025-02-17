@@ -10,12 +10,12 @@ python = "^3.11"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^8.3.4"
-coverage = "^7.6.11"
+coverage = "^7.6.12"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.9.5"
+ruff = "^0.9.6"
 pre-commit = "^4.1.0"
-pyright = "^1.1.393"
+pyright = "^1.1.394"
 
 [build-system]
 requires = ["poetry-core"]
