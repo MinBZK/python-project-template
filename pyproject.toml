@@ -2,7 +2,7 @@
 name = "python_project"
 version = "0.1.0"
 description = ""
-authors = ["ai-validation-team <ai-validation@minibzk.nl>"]
+authors = ["Digi Gilde <digigilde@rijksoverheid.nl>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]

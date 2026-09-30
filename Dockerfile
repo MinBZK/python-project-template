@@ -2,7 +2,7 @@ ARG PYTHON_VERSION=3.11.7-slim
 
 FROM  --platform=$BUILDPLATFORM python:${PYTHON_VERSION} as project-base
 
-LABEL maintainer=ai-validatie@minbzk.nl \
+LABEL maintainer=digigilde@rijksoverheid.nl \
       organization=MinBZK \
       license=EUPL-1.2 \
       io.docker.minbzk.name=python-project-template
